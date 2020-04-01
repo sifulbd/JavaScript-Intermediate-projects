@@ -31,10 +31,10 @@ var theTodo = {
         }
         else {
             for (var i = 0; i < alltodos; i++) {            
-                this.todoList[i].complete = true;
+                this.todoList[i].complete  = true;
             }
         }
-    },
+    },  
 
     addItem: function (item) {
         this.todoList.push({
