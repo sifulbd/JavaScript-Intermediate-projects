@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
 
     <div>
-        <button onclick="handler.displayallTodos()">Display Todos</button>
         <button onclick="handler.toggleAlltodos()">Toggle All Todos</button>        
     </div> 
     <div class="">
         <input type="text" id="todoinput" placeholder="New todo">
         <button onclick="handler.addnewTodo()">Add new</button>
     </div>
+    <div class="">
+        <input type="text" id="todopositon">
+        <input type="text" id="todochangetext">
+        <button onclick="handler.changeTodo()">Change</button>
+    </div>
+    <div class="">
+        <input type="text" id="deletetodoPosition">
+        <button onclick="handler.deleteTodo()">Delete todo</button>
+    </div>
+
+    <div class="">
+        <input type="text" id="toggletodocomplete">
+        <button onclick="handler.completeTodo()">Complete todo</button>
+    </div>
+
+    <ul>
+
+    </ul>
     
     <script src="todo.js"></script>
 </body>
