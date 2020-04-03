@@ -58,3 +58,18 @@ var theTodo = {
         this.displayTodo();
     }
 }
+
+var handler = {
+    displayallTodos: function () {
+        theTodo.displayTodo();
+    },
+    toggleAlltodos: function() {
+        theTodo.toggleAll();
+        theTodo.displayTodo();
+    },
+    addnewTodo: function() {
+        var todoinput = document.getElementById('todoinput');
+        theTodo.addItem(todoinput.value);
+        todoinput.value = ' ';
+    }
+}
