@@ -102,3 +102,74 @@ var view = {
 
 
 //console.log();
+
+
+function onetoine() {
+    for(var i = 0; i < 10; i++) {
+        console.log(i);
+    }
+}
+
+function functionwithdebugger(myfunction) {
+    debugger;
+    myfunction();
+}
+
+
+
+
+
+function studentsName() {    
+    for(var i = 0; i < students.length; i++) {
+        console.log(students[i]);
+    }
+}
+
+function logname(name) {
+    console.log(name);
+}
+
+
+
+var students = ['amin','ani','monir', 'riad'];
+
+// var students = ['amin','ani','monir', 'riad'];
+
+// function forEach(myarray) {
+//     var x;
+//     for(var i = 0; i < myarray.length; i++) {
+//         function myfunction() {
+//            var x = myarray[i]
+//         };
+//         myfunction();
+//     }
+//     return x;
+// }
+
+
+
+
+// var y = forEach(students);
+// console.log(y);
+
+
+
+
+
+
+function forEach(myarray) {
+    debugger;
+    function myfunction() {
+        for(i = 0; i < myarray.length; i++) {
+             myarray[i];
+        }
+    }
+    return myfunction();
+}
+
+var na = forEach(students);
+console.log(na);
+
+
+
+
