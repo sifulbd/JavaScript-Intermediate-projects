@@ -158,16 +158,16 @@ var students = ['amin','ani','monir', 'riad'];
 
 
 function forEach(myarray) {
-    debugger;
-    function myfunction() {
+    //debugger;
+    var result;
+    function myfunction(myarray) {
         for(i = 0; i < myarray.length; i++) {
-             myarray[i];
+           return result = myarray[i];            
         }
-    }
-    return myfunction();
+    }     
 }
 
-var na = forEach(students);
+var na = forEach(students, myfunction);
 console.log(na);
 
 
