@@ -167,7 +167,7 @@ function forEach(myarray) {
     }     
 }
 
-var na = forEach(students, myfunction);
+var na = forEach(students,); 
 console.log(na);
 
 
