@@ -64,10 +64,8 @@ var handler = {
         todochangetext.value = '';
         view.displayTodotext();
     },
-    deleteTodo: function() {
-        var deletetodoposition = document.getElementById('deletetodoPosition');
-        theTodo.deleteItem(deletetodoposition.value);
-        deletetodoposition.value = '';
+    deleteTodo: function(position) {
+        theTodo.deleteItem(position);
         view.displayTodotext();
     },
     completeTodo: function() {
@@ -92,84 +90,27 @@ var view = {
             }else {
                 todotextwithcomplete = ' ' + todos.todoText;
             }
+            todosli.id = i;
             todosli.textContent = todotextwithcomplete;
+            todosli.appendChild(this.createDeletebutton());
             todosul.appendChild(todosli);
         }
     },
-}
-
-
-
-
-//console.log();
-
-
-function onetoine() {
-    for(var i = 0; i < 10; i++) {
-        console.log(i);
+    createDeletebutton: function() {
+        var deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Button';
+        deleteButton.className = 'deleteButton';
+        return deleteButton;
+    },
+    setEventlistner: function() {
+        var todoUl = document.querySelector('ul');
+        todoUl.addEventListener('click', function(event){    
+            var clicketPositon = event.target;
+            if(clicketPositon.className === 'deleteButton') {
+                handler.deleteTodo(parseInt(clicketPositon.parentNode.id));
+            }
+        });
     }
 }
-
-function functionwithdebugger(myfunction) {
-    debugger;
-    myfunction();
-}
-
-
-
-
-
-function studentsName() {    
-    for(var i = 0; i < students.length; i++) {
-        console.log(students[i]);
-    }
-}
-
-function logname(name) {
-    console.log(name);
-}
-
-
-
-var students = ['amin','ani','monir', 'riad'];
-
-// var students = ['amin','ani','monir', 'riad'];
-
-// function forEach(myarray) {
-//     var x;
-//     for(var i = 0; i < myarray.length; i++) {
-//         function myfunction() {
-//            var x = myarray[i]
-//         };
-//         myfunction();
-//     }
-//     return x;
-// }
-
-
-
-
-// var y = forEach(students);
-// console.log(y);
-
-
-
-
-
-
-function forEach(myarray) {
-    //debugger;
-    var result;
-    function myfunction(myarray) {
-        for(i = 0; i < myarray.length; i++) {
-           return result = myarray[i];            
-        }
-    }     
-}
-
-var na = forEach(students,); 
-console.log(na);
-
-
-
+view.setEventlistner();
 
