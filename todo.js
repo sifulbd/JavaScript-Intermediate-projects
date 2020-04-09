@@ -112,5 +112,5 @@ var view = {
         });
     }
 }
-view.setEventlistner();
+view.setEventlistner(); 
 
