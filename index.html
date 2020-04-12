@@ -4,40 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
         div {
             margin-bottom: 20px;
+        }
+
+        .player {
+            width: 500px;
+            height: 400px;
+            background-color: #e0e0e0;
+            padding: 50px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div>
-        <button onclick="handler.toggleAlltodos()">Toggle All Todos</button>        
-    </div> 
-    <div class="">
-        <input type="text" id="todoinput" placeholder="New todo">
-        <button onclick="handler.addnewTodo()">Add new</button>
-    </div>
-    <div class="">
-        <input type="text" id="todopositon">
-        <input type="text" id="todochangetext">
-        <button onclick="handler.changeTodo()">Change</button>
-    </div>
-    <div class="">
-        <input type="text" id="deletetodoPosition">
-        <button onclick="handler.deleteTodo()">Delete todo</button>
+    <div class="wandctodo">
+        <div>
+            <button onclick="handler.toggleAlltodos()">Toggle All Todos</button>        
+        </div> 
+        <div class="">
+            <input type="text" id="todoinput" placeholder="New todo">
+            <button onclick="handler.addnewTodo()">Add new</button>
+        </div>
+        <div class="">
+            <input type="text" id="todopositon">
+            <input type="text" id="todochangetext">
+            <button onclick="handler.changeTodo()">Change</button>
+        </div>
+        <div class="">
+            <input type="text" id="deletetodoPosition">
+            <button onclick="handler.deleteTodo()">Delete todo</button>
+        </div>
+    
+        <div class="">
+            <input type="text" id="toggletodocomplete">
+            <button onclick="handler.completeTodo()">Complete todo</button>
+        </div>
+    
+        <ul>
+    
+        </ul>
     </div>
 
-    <div class="">
-        <input type="text" id="toggletodocomplete">
-        <button onclick="handler.completeTodo()">Complete todo</button>
+    <div class="card-collection">
+        <ul class="item-collection">
+            <li class="item">List One</li>
+            <li class="item">List Two</li>
+            <li class="item">List Three</li>
+            <li class="item">List Four</li>
+        </ul>
     </div>
 
-    <ul>
-
-    </ul>
+    <div class="player">
+        <h2>Your name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt <br>
+            vero tempora laborum! Blanditiis, corporis! Quaerat perspiciatis exercitationem <br>
+            inventore repellat illo, magni rem provident eveniet delectus dolorem consequatur, <br>
+             autem commodi.</p>
+        <input type="text" placeholder="type here" class="playerInput" value="hi there">
+        <button class="clkbutton">Click me</button>
+    </div>
     
     <script src="todo.js"></script>
+    <script src="trv.js"></script>
 </body>
 </html>
