@@ -53,25 +53,33 @@ ul.className = "collection-list";
 
 
 
-let desk = document.querySelector('.player');
-let title = document.querySelector('h2');
-let content = document.querySelector('p');
-var button = document.querySelector('.clkbutton');
-let pInput = document.querySelector('.playerInput');
+// let desk = document.querySelector('.player');
+// let title = document.querySelector('h2');
+// let content = document.querySelector('p');
+// var button = document.querySelector('.clkbutton');
+// let pInput = document.querySelector('.playerInput');
 
 
-// desk.addEventListener('mousemove', output );
+// // desk.addEventListener('mousemove', output );
+
+// // function output(e) {
+// //     desk.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 30)`;
+// //     console.log(pInput.value);
+// // }
+
+
+// pInput.addEventListener('keypress', output);
 
 // function output(e) {
-//     desk.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 30)`;
-//     console.log(pInput.value);
+//     title.innerText = pInput.value;
 // }
 
 
-pInput.addEventListener('keypress', output);
-
-function output(e) {
-    title.innerText = pInput.value;
+const Person() {
+    this.name = name;
+    this.age = age;
+    this.birthday = new Date();
 }
+
 
 
