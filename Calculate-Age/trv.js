@@ -6,8 +6,10 @@ const button = document.querySelector('.sub-btn');
 //Input
 const birthdateitem = document.querySelector('#bday-input');
 
+//EventListner
 button.addEventListener('click', output );
 
+//works
 function output() {    
     // input value
     var birthdayValue = birthdateitem.value;
