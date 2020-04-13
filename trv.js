@@ -75,11 +75,21 @@ ul.className = "collection-list";
 // }
 
 
-const Person() {
+function Person (name, age, birthday) {
     this.name = name;
     this.age = age;
-    this.birthday = new Date();
+    this.birthday = new Date(birthday);
+    this.calculateAge = function() {
+        // Substruct current time from birthday time
+        var diff = Date.now() - this.birthday.getTime();
+        // store that on new variable
+        var ageDate = new Date(diff);
+        //substruct new variable from 1970
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
 }
+
+var brad = new Person('brad', 26, '1-11-1992');
 
 
 
