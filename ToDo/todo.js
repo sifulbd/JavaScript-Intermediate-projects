@@ -38,7 +38,7 @@ function gettasks() {
 }
 
 function addTodo() {
-    const TodoInputContent  = todoInput.value;
+    const TodoInputContent  = todoInput.value;  
     if(TodoInputContent === '') {
         
     }else {
