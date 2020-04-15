@@ -53,17 +53,17 @@
 
 
 
-// let desk = document.querySelector('.player');
+let desk = document.querySelector('.player');
 // let title = document.querySelector('h2');
 // let content = document.querySelector('p');
 // var button = document.querySelector('.clkbutton');
 // let pInput = document.querySelector('.playerInput');
 
 
-// desk.addEventListener('mousemove', output2 );
-// function output2(e) {
-//     desk.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 30)`;
-// }
+desk.addEventListener('mousemove', output2 );
+function output2(e) {
+    desk.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 30)`;
+}
 
 
 // pInput.addEventListener('keypress', output);
