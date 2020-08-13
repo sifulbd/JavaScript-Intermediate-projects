@@ -96,7 +96,7 @@ var view = {
             todosul.appendChild(todosli);
         }
     },
-    createDeletebutton: function() {
+    createDeletebutton: function() { 
         var deleteButton = document.createElement('button');
         deleteButton.textContent = 'Button';
         deleteButton.className = 'deleteButton';
